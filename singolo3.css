@@ -48,7 +48,7 @@ body {
 .quote {
 	padding: 34px 0 66px 0;
 	background-color: #f06c64;
-	border-bottom: 6px solid #ea676b;
+	border-bottom: 6 px solid #ea676b;
 }
 
 .quote__title {
