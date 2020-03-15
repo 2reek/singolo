@@ -189,14 +189,6 @@ body {
 	align-items: center;
 }
 
-.iphone img {
-	cursor: pointer;
-}
-
-.iphone-display {
-	cursor: pointer;
-}
-
 .item.slide2 {
 	background-color: #648bf0;
 }
@@ -290,14 +282,35 @@ body {
 	padding-top: 4px;
 }
 
+.slider__image_vertical.slider__button-home {
+	position: absolute;
+	top: 453px;
+	left: 87px;
+	cursor: pointer;
+}
+
 .slider__image_horizontal {
 	margin-bottom: 12px;
 	margin-left: 72px;
 }
 
+.slider__image_horizontal.slider__button-home {
+	position: absolute;
+	top: 257px;
+	left: 361px;
+	cursor: pointer;
+}
+
 .slider__image_vertical2 {
 	margin-bottom: 12px;
 	margin-left: 275px;
+}
+
+.slider__image_vertical2.slider__button-home {
+	position: absolute;
+	top: 468px;
+	left: 224px;
+	cursor: pointer;
 }
 
 .iphone-vertical-display-off {

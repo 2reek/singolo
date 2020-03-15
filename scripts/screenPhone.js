@@ -1,25 +1,12 @@
-const phones = document.querySelectorAll(".slider__image");
-const phonesScreen = document.querySelectorAll(".iphone-display");
+const phonesButtonHome = document.querySelectorAll(".slider__button-home");
 
-phones.forEach((element) => {
-	element.addEventListener("click", phoneClick);
+phonesButtonHome.forEach((element) => {
+	element.addEventListener("click", buttonHomeClick);
 });
 
-phonesScreen.forEach((element) => {
-	element.addEventListener("click", phoneScreenClick);
-});
-
-function phoneClick(event) {
-	const display = event.target.previousElementSibling;
-	const arrayClass = Array.from(display.classList);
-	arrayClass.includes("deactivate")
-		? display.classList.remove("deactivate")
-		: display.classList.add("deactivate");
-}
-
-function phoneScreenClick(event) {
-	const display = event.target;
-	const arrayClass = Array.from(display.classList);
+function buttonHomeClick(event) {
+	const display = event.target.parentElement.firstElementChild;
+	const arrayClass = [...display.classList];
 	arrayClass.includes("deactivate")
 		? display.classList.remove("deactivate")
 		: display.classList.add("deactivate");
