@@ -8,21 +8,28 @@
 	</head>
 	<body>
 		<header class="header">
+			<a href="" name="home"></a>
 			<div class="wrapper">
 				<h1 class="header__logo">
 					SINGOLO<span class="header__logo_painted">*</span>
 				</h1>
 				<nav class="nav">
 					<ul class="nav__list">
-						<li class="nav__item"><a class="nav__link" href="#">Home</a></li>
 						<li class="nav__item">
-							<a class="nav__link" href="#">Services</a>
+							<a class="nav__link selected_nav" href="#home">Home</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link" href="#">Portfolio</a>
+							<a class="nav__link" href="#services">Services</a>
 						</li>
-						<li class="nav__item"><a class="nav__link" href="#">About</a></li>
-						<li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+						<li class="nav__item">
+							<a class="nav__link" href="#portfolio">Portfolio</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#about">About</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#contact">Contact</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -30,24 +37,66 @@
 
 		<section class="main-slider">
 			<div class="wrapper">
-				<div class="slider">
+				<div class="corousel">
+					<div class="items-container">
+						<div class="item active">
+							<div class="description">
+								<div class="iphone">
+									<div class="iphone-display iphone-vertical-display-off"></div>
+									<img
+										class="slider__image slider__image_vertical"
+										src="assets/images/iPhone Horizontal.png"
+										alt="iphone vertical"
+									/>
+									<img
+										class="slider__image_vertical slider__button-home"
+										src="assets/images/Home.png"
+										alt="iphone vertical"
+									/>
+								</div>
+								<div class="iphone">
+									<div
+										class="iphone-display iphone-horizontal-display-off"
+									></div>
+									<img
+										class="slider__image slider__image_horizontal"
+										src="assets/images/iPhone Vertical.png"
+										alt="iphone horizontal"
+									/>
+									<img
+										class="slider__image_horizontal slider__button-home"
+										src="assets/images/Home.png"
+										alt="iphone vertical"
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="item slide2">
+							<div class="description">
+								<div class="iphone">
+									<div
+										class="iphone-display iphone-vertical2-display-off"
+									></div>
+									<img
+										class="slider__image slider__image_vertical2"
+										src="assets/images/iphone-slide2.png"
+										alt="iphone-slide2"
+									/>
+									<img
+										class="slider__image_vertical2 slider__button-home"
+										src="assets/images/Home.png"
+										alt="iphone vertical"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<img
 						class="slider__arrow slider__arrow_left"
 						src="assets/images/chev@1X.png"
 						alt="arrow left"
 					/>
-					<div class="slider__content">
-						<img
-							class="slider__image slider__image_vertical"
-							src="assets/images/iPhone Horizontal.png"
-							alt="iphone vertical"
-						/>
-						<img
-							class="slider__image slider__image_horizontal"
-							src="assets/images/iPhone Vertical.png"
-							alt="iphone horizontal"
-						/>
-					</div>
 					<img
 						class="slider__arrow slider__arrow_right"
 						src="assets/images/chev@1X (1).png"
@@ -59,7 +108,10 @@
 
 		<section class="main-services">
 			<div class="wrapper">
-				<h2 class="services__title">Our Services</h2>
+				<a href="" name="services"></a>
+				<h2 class="services__title">
+					Our Services
+				</h2>
 				<p class="services__paragraph">
 					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
 					Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
@@ -156,14 +208,18 @@
 		</section>
 		<section class="main-portfolio">
 			<div class="wrapper">
+				<a href="" name="portfolio"></a>
 				<h2 class="portfolio__title">Portfolio</h2>
+
 				<p class="portfolio__text">
 					Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
 					lacinia odio sem nec elit.
 				</p>
 
 				<ul class="portfolio__menu">
-					<li class="menu__item menu__item_active"><button>All</button></li>
+					<li class="menu__item menu__item_active">
+						<button class="selected_menu">All</button>
+					</li>
 					<li class="menu__item"><button>Web Design</button></li>
 					<li class="menu__item"><button>Graphic Design</button></li>
 					<li class="menu__item"><button>Artwork</button></li>
@@ -171,49 +227,85 @@
 
 				<ul class="portfolio__images">
 					<li class="images__item">
-						<img class="image_1" src="assets/images/Image_1.png" alt="image" />
-					</li>
-					<li class="images__item">
-						<img class="image_2" src="assets/images/Image_2.png" alt="image" />
-					</li>
-					<li class="images__item">
-						<img class="image_3" src="assets/images/Image_3.png" alt="image" />
-					</li>
-					<li class="images__item">
-						<img class="image_4" src="assets/images/Image_4.png" alt="image" />
-					</li>
-					<li class="images__item">
-						<img class="image_5" src="assets/images/Image_5.png" alt="image" />
-					</li>
-					<li class="images__item">
-						<img class="image_6" src="assets/images/Image_6.png" alt="image" />
-					</li>
-					<li class="images__item">
-						<img class="image_7" src="assets/images/Image_7.png" alt="image" />
-					</li>
-					<li class="images__item">
-						<img class="image_8" src="assets/images/Image_8.png" alt="image" />
-					</li>
-					<li class="images__item">
-						<img class="image_9" src="assets/images/Image_9.png" alt="image" />
+						<img
+							class="image-portfolio image_1"
+							src="assets/images/Image_1.png"
+							alt="image"
+						/>
 					</li>
 					<li class="images__item">
 						<img
-							class="image_10"
+							class="image-portfolio image_2"
+							src="assets/images/Image_2.png"
+							alt="image"
+						/>
+					</li>
+					<li class="images__item">
+						<img
+							class="image-portfolio image_3"
+							src="assets/images/Image_3.png"
+							alt="image"
+						/>
+					</li>
+					<li class="images__item">
+						<img
+							class="image-portfolio image_4"
+							src="assets/images/Image_4.png"
+							alt="image"
+						/>
+					</li>
+					<li class="images__item">
+						<img
+							class="image-portfolio image_5"
+							src="assets/images/Image_5.png"
+							alt="image"
+						/>
+					</li>
+					<li class="images__item">
+						<img
+							class="image-portfolio image_6"
+							src="assets/images/Image_6.png"
+							alt="image"
+						/>
+					</li>
+					<li class="images__item">
+						<img
+							class="image-portfolio image_7"
+							src="assets/images/Image_7.png"
+							alt="image"
+						/>
+					</li>
+					<li class="images__item">
+						<img
+							class="image-portfolio image_8"
+							src="assets/images/Image_8.png"
+							alt="image"
+						/>
+					</li>
+					<li class="images__item">
+						<img
+							class="image-portfolio image_9"
+							src="assets/images/Image_9.png"
+							alt="image"
+						/>
+					</li>
+					<li class="images__item">
+						<img
+							class="image-portfolio image_10"
 							src="assets/images/Image_10.png"
 							alt="image"
 						/>
 					</li>
 					<li class="images__item">
 						<img
-							class="image_11"
+							class="image-portfolio image_11"
 							src="assets/images/Image_11.png"
 							alt="image"
 						/>
 					</li>
 					<li class="images__item">
 						<img
-							class="image_12"
+							class="image-portfolio image_12"
 							src="assets/images/Image_12.png"
 							alt="image"
 						/>
@@ -224,13 +316,14 @@
 
 		<section class="main-about-us">
 			<div class="wrapper">
+				<a href="" name="about"></a>
 				<h2 class="about-us__title">About Us</h2>
+
 				<p class="about-us__text">
-					Fusce dapibus,&thinsp; tellus ac cursus commodo, tortor
-					mauris condimentum. Duis mollis, non commodo luctus,
-					nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-					nibh.
+					Fusce dapibus,&thinsp; tellus ac cursus commodo, tortor mauris
+					condimentum. Duis mollis, non commodo luctus, nisi erat porttitor
+					ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac
+					cursus commodo, tortor mauris condimentum nibh.
 				</p>
 
 				<div class="about-us__staff">
@@ -321,9 +414,9 @@
 					</div>
 				</div>
 			</div>
-        </section>
+		</section>
 
-        <section class="main-quote">
+		<section class="main-quote">
 			<div class="wrapper">
 				<h2 class="quote__title">Get a Quote</h2>
 				<p class="quote__text">
@@ -334,7 +427,7 @@
 				</p>
 
 				<div class="quote-form">
-					<form class="form" id="quote-form">
+					<form action="#" method="post" class="form" id="quote-form">
 						<input
 							class="form__input form__input_text"
 							type="text"
@@ -371,6 +464,7 @@
 					</form>
 
 					<div class="contact-information">
+						<a href="" name="contact"></a>
 						<h3>Contact Information</h3>
 						<p>
 							Quisque hendrerit purus dapibus, ornare nibh vitae, viver-ra nibh.
@@ -423,6 +517,19 @@
 				</ul>
 			</div>
 		</footer>
-	</body>
+		<div class="popup" hidden>
+			<div class="wrapper">
+				<div class="popup__content">
+					<h4>Письмо отправлено</h4>
+					<output class="popup__content_subject-info"></output>
+					<output class="popup__content_textarea-info"></output>
+					<br />
+					<button>ok</button>
+				</div>
+			</div>
+		</div>
+
+		<script type="module" src="script.js"></script>
 	</body>
 </html>
+
