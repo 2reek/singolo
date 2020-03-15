@@ -276,6 +276,13 @@ body {
 	margin-left: 38px;
 }
 
+.slider__button-home:hover {
+	width: 44px;
+}
+.slider__button-home:active {
+	width: 42px;
+}
+
 .slider__image_vertical {
 	margin-bottom: 14px;
 	margin-left: 112px;
