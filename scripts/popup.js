@@ -24,19 +24,18 @@ function openPopup(event) {
 	if (!Helper.isEmail(htmlElements.inputFormEmail.value)) {
 		return alert("Не корректно введена почта");
 	}
-
 	htmlElements.popupOutputSubject.innerHTML = "";
 	htmlElements.popupOutputTextarea.innerHTML = "";
 
-	htmlElements.inputFormSubject.value === "Singolo"
-		? (htmlElements.popupOutputSubject.value = "Тема: Singolo ")
+	Helper.isString(htmlElements.inputFormSubject.value)
+		? (htmlElements.popupOutputSubject.value = `Tema :	${htmlElements.inputFormSubject.value}`)
 		: (htmlElements.popupOutputSubject.value = "Без темы");
 
-	htmlElements.inputFormTextarea.value === "Portfolio project"
-		? (htmlElements.popupOutputTextarea.value = "Описание: Portfolio project")
+	Helper.isString(htmlElements.inputFormTextarea.value)
+		? (htmlElements.popupOutputTextarea.value = `Oписание :	${htmlElements.inputFormTextarea.value}`)
 		: (htmlElements.popupOutputTextarea.value = "Без описания");
 
-	popup.removeAttribute("hidden");
+	htmlElements.popup.removeAttribute("hidden");
 }
 
 function closePopup() {
