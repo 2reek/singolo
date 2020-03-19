@@ -24,29 +24,19 @@ function showImages(event, nodeList) {
 		? [...nodeList].map((elem) => {
 				htmlElements.portfolioContainerImages.append(elem);
 		  })
-		: mixArray([...nodeList]).map((elem) => {
+		: shuffleArray([...nodeList]).map((elem) => {
 				htmlElements.portfolioContainerImages.append(elem);
 		  });
 }
 
-function mixArray(arr) {
-	let array = arr.slice();
-	const mixedArray = [];
-	moveNambers(array);
-
-	function moveNambers(array) {
-		if (array.length === 1) {
-			mixedArray.push(array[0]);
-		} else {
-			const randomValue = array[Math.floor(Math.random() * array.length)];
-			const indexValue = array.indexOf(randomValue);
-			mixedArray.push(randomValue);
-			array.splice(indexValue, 1);
-			moveNambers(array);
-		}
+function shuffleArray(arr) {
+	const array = arr;
+	for (let i = array.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[array[i], array[j]] = [array[j], array[i]];
 	}
 
-	return mixedArray;
+	return array;
 }
 
 htmlElements.portfolioContainerImages.addEventListener("click", highlightImage);
