@@ -6,7 +6,7 @@ const htmlElements = {
 document.addEventListener("scroll", onScrollDocument);
 
 function onScrollDocument() {
-	const offsetSections = 230;
+	const offsetSections = 205;
 	const currentPosition = window.scrollY + offsetSections;
 
 	htmlElements.documentSections.forEach((section) => {
