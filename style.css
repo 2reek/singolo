@@ -125,13 +125,13 @@ body {
 
 .nav__link:hover {
 	color: black;
-	box-shadow: 0px 0px 5px 5px #c0c0c0;
+	box-shadow: 0px 0px 2px 2px #c0c0c0;
 	background-color: #c0c0c0;
-	border-radius: 5px;
+	border-radius: 6px;
 }
 .nav__link:active {
 	color: #ffffff;
-	box-shadow: 0px 0px 0px 0px #ffffff;
+	box-shadow: 0px 0px 0px 0px #ffffff0e;
 	transition: 0.1s linear;
 }
 
@@ -321,14 +321,14 @@ body {
 
 .slider__image_vertical2.slider__button-home {
 	position: absolute;
-	top: 47px;
+	top: 469px;
 	left: 225px;
 	cursor: pointer;
 }
 
 .iphone-vertical-display-off {
 	position: absolute;
-	top: 115px;
+	top: 116px;
 	left: 126px;
 	width: 189px;
 	height: 333px;
@@ -356,7 +356,7 @@ body {
 
 .iphone-vertical2-display-off {
 	position: absolute;
-	top: 103px;
+	top: 104px;
 	left: 419px;
 	width: 201px;
 	height: 354px;
@@ -438,6 +438,7 @@ body {
 	line-height: 17px;
 	color: #666d89;
 	letter-spacing: -0.08px;
+	overflow: hidden;
 }
 
 .service__description {
@@ -523,7 +524,7 @@ body {
 	border: 1px solid #666d89;
 	background-color: inherit;
 	cursor: pointer;
-	/* outline: none; */
+	outline: none;
 }
 
 .menu__item_active > button {
@@ -568,8 +569,13 @@ body {
 }
 
 .portfolio__images {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-areas:
+		"x x x x"
+		"x x x x"
+		"x x x x"
+		"x x x x";
+
 	max-height: 720px;
 	max-width: 960px;
 	margin: 5px;
@@ -584,14 +590,16 @@ body {
 	align-items: center;
 	height: 187px;
 	width: 219px;
-	margin: 4px 5px;
+	margin: 2px 5px 8px;
 	border: 5px solid #2d303a;
 }
 
 .images__item > img {
+	height: 186px;
+	width: 219px;
 	cursor: pointer;
 	animation-name: drawing;
-	animation-duration: 2s;
+	animation-duration: 1s;
 }
 @keyframes drawing {
 	0% {
@@ -603,10 +611,10 @@ body {
 		opacity: 0.1;
 	}
 	50% {
-		opacity: 0.5;
+		opacity: 0.1;
 	}
 	75% {
-		opacity: 0.7;
+		opacity: 0.5;
 	}
 	100% {
 		opacity: 1;
@@ -683,6 +691,7 @@ body {
 	margin: 10px 0 0 0;
 	letter-spacing: -0.4px;
 	color: #666d89;
+	overflow: hidden;
 }
 
 .staff_item_text {
@@ -828,6 +837,7 @@ body {
 	text-transform: uppercase;
 	color: #f0d8d9;
 	cursor: pointer;
+	outline: none;
 }
 
 .form__input_submit:hover {
