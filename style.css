@@ -50,12 +50,11 @@ body {
 
 .header {
 	position: fixed;
-	max-height: 89px;
-	max-width: 1020px;
-	/* display: none; */
 	width: 100%;
 	left: 50%;
 	top: 0;
+	max-height: 89px;
+	max-width: 1020px;
 	transform: translateX(-50%);
 	z-index: 450;
 	background-color: #2d303a;
@@ -232,10 +231,6 @@ body {
 	display: none;
 }
 
-/* .header .mobile-version__menu {
-	display: none;
-} */
-
 @media screen and (max-width: 767px) {
 	.header {
 		min-width: 210px;
@@ -271,11 +266,8 @@ body {
 /* SLIDER */
 
 .main-slider {
-	/* display: flex;
-	align-items: center; */
-
-	max-height: 600px;
 	height: 100%;
+	max-height: 600px;
 	max-width: 1020px;
 	margin: 0 auto;
 	padding-top: 94px;
@@ -304,7 +296,6 @@ body {
 .item {
 	display: none;
 	position: relative;
-	/* height: 100%; */
 	animation: 0.5s ease-in-out;
 	margin: 0 auto;
 	background-color: #f06c64;
@@ -322,7 +313,6 @@ body {
 }
 
 .description {
-	/* height: 100%; */
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -344,9 +334,6 @@ body {
 	cursor: pointer;
 	opacity: 0.2;
 }
-/* .slider__arrow:hover {
-	color: rgb(146, 146, 146);
-} */
 
 .slider__arrow_left {
 	margin-left: 4%;
@@ -428,10 +415,6 @@ body {
 }
 
 .slider__image_vertical {
-	/* margin-top: 0%;
-	margin-left: 0%;
-	margin-right: 0%;
-	margin-bottom: 0%; */
 	max-width: 100%;
 	max-height: 100%;
 }
@@ -445,18 +428,13 @@ body {
 }
 
 .corousel .iphone:nth-child(2) {
-	/* margin-top: 0%; */
 	margin-left: 4.7%;
 	margin-right: 11%;
-	/* margin-bottom: 0%; */
 	max-width: 100%;
 	max-height: 100%;
 }
 
 .slider__image_horizontal {
-	/* margin-left: 0%;
-	margin-bottom: 0%;
-	margin-right: 0%; */
 	max-width: 100%;
 	max-height: 100%;
 }
@@ -796,21 +774,16 @@ body {
 	width: calc(25% - 15px);
 	max-height: 187px;
 	margin-bottom: 20px;
-	/* height: 187px;
-	width: 219px; */
-
-	/* border: 5px solid #2d303a; */
 }
 
 .images__item > img {
-	/* height: 186px;
-	width: 219px; */
 	width: 100%;
 	height: 100%;
 	cursor: pointer;
 	animation-name: drawing;
 	animation-duration: 1s;
 }
+
 @keyframes drawing {
 	0% {
 		opacity: 0;
@@ -1057,10 +1030,6 @@ body {
 /* QUOTE */
 
 .main-quote {
-	/* width: 1020px;
-	margin: 0 auto;
-	height: 547px;
-	padding: 34px 0 66px 0; */
 	max-width: 1020px;
 	margin: 0 auto;
 	background-color: #f06c64;
@@ -1133,15 +1102,9 @@ body {
 }
 
 .form__input_submit {
-	/* position: absolute; */
-	/* left: 528px;
-	top: 360px; */
-	/* margin-top: 0px;
-	padding-left: 24px;
-	padding-right: 24px; */
-	margin: 0;
 	width: 80px;
 	height: 40px;
+	margin: 0;
 	border: 1px solid #d6564f;
 	text-transform: uppercase;
 	color: #f0d8d9;
