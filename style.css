@@ -415,17 +415,18 @@ body {
 
 .slider__image_vertical2.slider__button-home {
 	position: absolute;
-	top: 469px;
-	left: 225px;
+	top: 79.5%;
+	left: 45.8%;
+	width: 4%;
 	cursor: pointer;
 }
 
 .iphone-vertical-display-off {
 	position: absolute;
-	top: 116px;
-	left: 126px;
-	width: 189px;
-	height: 333px;
+	top: 17.6%;
+	left: 12.3%;
+	width: 18.5%;
+	height: 55.4%;
 	border: 1px solid #2d303a;
 	border-radius: 4px;
 	background: #2d303a;
@@ -436,10 +437,10 @@ body {
 
 .iphone-horizontal-display-off {
 	position: absolute;
-	top: 185px;
-	left: 484px;
-	width: 333px;
-	height: 188px;
+	top: 31.9%;
+	left: 47.3%;
+	width: 32.7%;
+	height: 31.3%;
 	border: 1px solid #2d303a;
 	border-radius: 4px;
 	background: #2d303a;
@@ -450,10 +451,10 @@ body {
 
 .iphone-vertical2-display-off {
 	position: absolute;
-	top: 104px;
-	left: 419px;
-	width: 201px;
-	height: 354px;
+	top: 19.6%;
+	left: 38%;
+	width: 19.5%;
+	height: 58.4%;
 	border: 1px solid #2d303a;
 	border-radius: 4px;
 	background: #2d303a;
@@ -471,6 +472,15 @@ body {
 	.main-slider {
 		padding-top: 71px;
 		transition: padding 1s;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.iphone-horizontal-display-off {
+		height: 30.5%;
+	}
+	.iphone-vertical2-display-off {
+		left: 37.5%;
 	}
 }
 
@@ -796,6 +806,10 @@ body {
 	.images__item {
 		width: calc(50% - 5px);
 		margin-bottom: 10px;
+	}
+
+	.menu__item {
+		margin-top: 10px;
 	}
 }
 
