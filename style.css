@@ -52,7 +52,7 @@ body {
 	position: fixed;
 	max-height: 89px;
 	max-width: 1020px;
-
+	/* display: none; */
 	width: 100%;
 	left: 50%;
 	top: 0;
@@ -76,6 +76,10 @@ body {
 	color: #ffffff;
 	text-transform: uppercase;
 	transition: margin 0.5s;
+}
+
+.header__logo.movingLogo {
+	z-index: 500;
 }
 
 .header__logo_painted {
@@ -144,7 +148,8 @@ body {
 	transition: 0.1s linear;
 }
 
-.nav__item .selected_nav {
+.nav__item .selected_nav,
+.mobile-nav .selected_nav {
 	color: #f06c64;
 }
 
@@ -152,19 +157,84 @@ body {
 	display: none;
 }
 
-.header .mobile-version_icon {
+.mobile-version__icon {
 	position: fixed;
 	top: 28px;
 	left: 20px;
 	width: 25px;
 	height: 20px;
 	cursor: pointer;
+	z-index: 500;
+	transform: rotate(0deg);
+	transition: transform 0.3s;
+
 	display: none;
 }
 
-.header .mobile-version_menu {
+.mobile-version_overlay {
+	position: fixed;
+	width: 100%;
+	height: 10000%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 400;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: background-color 0.4s;
+}
+
+.mobile-nav {
+	position: relative;
+	display: flex;
+	z-index: 500;
+	width: 204px;
+	height: 100vh;
+	padding-left: 71px;
+	background-color: #2d303a;
+	box-shadow: 0 -40px 20px rgba(0, 0, 0, 0.4);
+	transform: translateX(0%);
+	transition: width 0.4s;
+}
+
+.mobile-nav__list {
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.mobile-nav__link {
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 700;
+
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: transparent;
+	transition: color 0.3s;
+	cursor: pointer;
+}
+
+.mobile-nav__item:not(:first-child) {
+	margin-top: 27px;
+}
+
+.openMenu {
+	transform: rotate(90deg);
+	transition: transform 0.3s;
+}
+
+.hiddenElement {
 	display: none;
 }
+
+/* .header .mobile-version__menu {
+	display: none;
+} */
 
 @media screen and (max-width: 767px) {
 	.header {
@@ -183,10 +253,10 @@ body {
 	}
 
 	.header .mobile-version {
-		display: block;
+		display: flex;
 	}
 
-	.header .mobile-version_icon {
+	.header .mobile-version__icon {
 		display: flex;
 		justify-content: start;
 	}
